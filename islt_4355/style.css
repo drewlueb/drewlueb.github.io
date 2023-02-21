@@ -1,4 +1,6 @@
 #h1 {color: #063;}
-#resumebox{
-    background-color: #339;
+#resumebox {
+    background-color: blue;
+    border-color: aqua;
+    border-style: groove;
 }
