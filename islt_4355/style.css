@@ -3,5 +3,6 @@
     background-color: red;
     border-color: aqua;
     border-style: groove;
-    margin-right: 50px;
+    border-width: 10%;
+    margin-right: 50%;
 }
