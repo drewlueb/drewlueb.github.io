@@ -1,7 +1,6 @@
 .nav {
-    display: inline;
+    display: inline-flex;
     border: 3px dotted magenta;
-    width: 150px;
     text-align: center;
     list-style-type: none;
     padding: 15px 15px 25px;
