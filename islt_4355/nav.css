@@ -1,12 +1,13 @@
 .nav {
-    display: inline-flex;
+    display: flex;
     border: 3px dotted magenta;
     text-align: center;
     list-style-type: none;
     padding: 15px 15px 25px;
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10%;
+    margin: auto;
     justify-content: space-between;
-    column-gap: 20px;
+}
+span {
+    background-color: yellow;
+    width: 200px;
 }
