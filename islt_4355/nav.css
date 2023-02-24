@@ -1,5 +1,5 @@
 .nav {
-    display: block;
+    display: inline-block;
     border: 3px dotted magenta;
     width: 150px;
     text-align: center;
