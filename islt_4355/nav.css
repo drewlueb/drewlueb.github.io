@@ -11,7 +11,7 @@
 }
 
 nav ul {
-    display: inline-block;
+    display: flexbox;
     border: 3px double blue;
     margin: 100px;
     padding: 10px 15px;
