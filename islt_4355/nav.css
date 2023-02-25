@@ -3,8 +3,33 @@
     border: 3px dotted magenta;
     text-align: center;
     list-style-type: none;
-    padding: 50px 100px 100px;
+    padding: 10px 15px;
     margin: 100px;
     justify-content: space-between;
+    background-color: grey;
+    text-decoration: none;
+}
+
+nav ul {
+    display: inline;
+    border: 3px double blue;
+    margin: 100px;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
     background-color: yellow;
+    padding: 5px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a:hover{
+    background-color: red;
 }
