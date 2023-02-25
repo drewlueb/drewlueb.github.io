@@ -16,18 +16,16 @@ nav ul {
     margin: 100px;
     padding: 10px 15px;
     text-decoration: none;
-    position: relative;
 }
 
 nav ul li ul {
     display: none;
-    position: absolute;
     background-color: yellow;
     padding: 5px;
 }
 
 nav ul li:hover ul {
-    display: block;
+    display: inline-block;
 }
 
 nav ul li ul li a:hover{
