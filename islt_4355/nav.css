@@ -5,8 +5,11 @@
 
 nav {
     height: 60px;
-    width: 100%;
+    width: 98%;
     background-color: grey;
+    border: 3px double blue;
+    margin-top: 0;
+    margin-left: 1%;
 }
 
 nav ul {
