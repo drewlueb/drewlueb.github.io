@@ -11,7 +11,7 @@
 }
 
 nav ul {
-    display: flex;
+    display: inline;
     border: 3px double blue;
     margin: 100px;
     padding: 10px 15px;
@@ -21,7 +21,9 @@ nav ul {
 nav ul li ul {
     display: none;
     background-color: yellow;
+    list-style-type: none;
     padding: 5px;
+    width: 150px;
 }
 
 nav ul li:hover ul {
