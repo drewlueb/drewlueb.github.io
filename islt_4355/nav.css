@@ -6,8 +6,8 @@
 nav {
     height: 60px;
     width: 98%;
-    background-color: grey;
-    border: 3px double blue;
+    background-color: silver;
+    border: 3px double green;
     margin-top: 0;
     margin-left: 1%;
 }
@@ -24,7 +24,8 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: red;
+    font-weight: bold;
+    color: black;
     padding: 20px 15px;
     font-size: 16px;
     text-decoration: none;
