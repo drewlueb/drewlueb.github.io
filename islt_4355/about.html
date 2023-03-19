@@ -4,6 +4,9 @@
 <head>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "nav.css">
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/c78d872df0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
 
@@ -25,20 +28,21 @@ Tested: January 31st,2023
 </head>
 <body>
     <header>
-        <nav>
-            <ul class = "nav">
-                <li><p id="website">Soccer For Dummies</p></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="learn.html">Learn</a>
-                    <ul>
-                        <li><a href="#Link1">Link 1</a></li>
-                        <li><a href="#Link2">Link 2</a></li>
-                        <li><a href="#Link3">Link 3</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="logo"><p id="website">Soccer For Dummies</p></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="itemws"><a href="learn.html">Learn <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="learn.html">Link 1</a></li>
+                        <li class="subitem"><a href="learn.html">Link 2</a></li>
+                        <li class="subitem"><a href="learn.html">Link 3</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact.html">Contact</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li class="item"><a href="#contact.html">Contact</a></li>
+                <li class="item"><a href="resources.html">Resources</a></li>
+                <li class="toggle"><i class="fas fa-bars"></i></li>
             </ul>
         </nav>
         <h1 id="h1">
@@ -58,17 +62,16 @@ Tested: January 31st,2023
             in soccer in both Kansas and Missouri. I currently am a coach for Sporting Columbia soccer club. 
             I am on staff for the soccer team at the University of Missouri.<br>
         </p>
-        <p id="pic">Picture</p>
         <p id = "resumebox"><a href="Drew Luebbert Resume PDF.pdf">Resume Link</a></p>
+        <img id = "pic" src="https://1drv.ms/u/s!Arh8sd_IpNLpi3jqkZE6NYtmr5DX?e=rNrf4n" alt="headshot">
+        <blockquote id="quote">“It is better to fail in originality than to succeed in imitation” - Herman Melville.</blockquote>
     </main>
-    
     <footer>
-        <blockquote>“It is better to fail in originality than to succeed in imitation” - Herman Melville.</blockquote>
-        <p> 
+        <p id="foot"> 
             <small>
-            All rights reserved to :<br>
-            Author - Drew Luebbert<br>
-            Email - dplccq@umsystem.edu
+                All rights reserved to :<br>
+                Author - Drew Luebbert<br>
+                Email - dplccq@umsystem.edu
             </small>
         </p>
     </footer>
