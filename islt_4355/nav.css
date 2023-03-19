@@ -2,60 +2,103 @@
     margin: 0;
     padding: 0;
 }
-
-nav {
-    height: 60px;
-    width: 98%;
-    background-color: silver;
-    border: 3px double green;
-    margin-top: 0;
-    margin-left: 1%;
+.nav{
+    background: lightgrey;
+    padding: 0 15px;
+    font-size: 15px;
+    border: 5px double green;
+    margin: 10px;
 }
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    float: left;
-    list-style: none;
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    font-weight: bold;
-    color: black;
-    padding: 20px 15px;
-    font-size: 16px;
+.nav a{
     text-decoration: none;
+    color: black;
 }
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: grey;
-    padding: 3px;
+.menu,
+.submenu{
+    list-style-type: none;
 }
-
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul li ul li {
-    width: 75px;
-}
-
-nav ul li ul li a {
-    padding: 10px 15px;
-}
-
-nav ul li ul li a:hover {
-    background-color: black;
-}
-
-#website{
-    margin-right: 550px;
-    font-size: 2.5rem;
+.logo{
+    padding: 10px 10px 10px 0px;
+    font-size: 30px;
     color: green;
+    font-family: sans-serif;
+}
+.item{
+    padding: 10px;
+}
+.itemws{
+    padding: 10px;
+}
+.item a:hover{
+    color: goldenrod;
+}
+.itemws a:hover{
+    color: goldenrod;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+    padding: 5px 5px;
+}
+.menu li.subitem a{
+    padding: 5px;
+}
+.toggle{
+    order: 1;
+    display: none;
+}
+.submenu{
+    margin-top: 15px;
+    display: none;
+}
+
+
+
+
+
+.menu li.itemws:hover ul.submenu{
+    display: block; 
+}
+
+
+
+@media (max-width: 750px) {
+    .toggle{
+        display: block;
+        font-size: 30px;
+        align-self: center;
+    }
+    .item{
+        width: 100%;
+        text-align: center;
+    }
+    .itemws{
+        width: 100%;
+        text-align: center;
+    }
+    .toggle:hover{
+        background-color: #eee770;
+    }
+    .item,
+    .itemws{
+        order: 2;
+        display: none;
+    }
+    .active .item{
+        display: block;
+    }
+    .submenu-active .submenu{
+        display: block;
+    }
+    .subitem a{
+        padding: 10px;
+    }
+    .submenu-active{
+        background-color: yellow;
+    }
 }

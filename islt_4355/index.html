@@ -4,7 +4,6 @@
 <head>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "nav.css">
-
 <!--
 Title: Soccer For Dummies
 Use: Understanding the Sport of Soccer
@@ -14,35 +13,36 @@ Developed: January 31st, 2023
 Tested: January 31st,2023
 -->
     <meta charset="utf-8">
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/c78d872df0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soccer For Dummies - Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class = "nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="learn.html">Learn</a>
-                    <ul>
-                        <li><a href="#Link1">Link 1</a></li>
-                        <li><a href="#Link2">Link 2</a></li>
-                        <li><a href="#Link3">Link 3</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="logo"><p id="website">Soccer For Dummies</p></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="itemws"><a href="learn.html">Learn <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="learn.html">Link 1</a></li>
+                        <li class="subitem"><a href="learn.html">Link 2</a></li>
+                        <li class="subitem"><a href="learn.html">Link 3</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact.html">Contact</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li class="item"><a href="#contact.html">Contact</a></li>
+                <li class="item"><a href="resources.html">Resources</a></li>
+                <li class="toggle"><i class="fas fa-bars"></i></li>
             </ul>
         </nav>
-        <h1 id="h1">
-            <p id="h1">Soccer for Dummies</p>
-        </h1>
+        <h1 id="h1"><p>Soccer for Dummies</p></h1>
     </header>
-    <main>
-        <p>
-            Welcome to your hub for information about the most popular sport in the world, soccer. 
-            <h2>
-                Goals of the Website
-            </h2>
+    <main class="home">
+        <p id="welcome">Welcome to your hub for information about the most popular sport in the world, soccer. </p>
+        <p><h2 id="goals">Goals of the Website</h2></p>
+        <p id="intro">
             With the rise of soccer in the United States over the last few decades it is necessary 
             for Americans to have a way to learn about the sport in a way that they can easily understand. 
             With soccer being the number one sport in the world, most Americans will have some catching up 
@@ -56,7 +56,7 @@ Tested: January 31st,2023
         </p>
     </main>
     <footer>
-        <p> 
+        <p id="foot"> 
             <small>
                 All rights reserved to :<br>
                 Author - Drew Luebbert<br>

@@ -13,27 +13,95 @@ Tested: January 31st,2023
 -->
     <meta charset="utf-8">
     <link rel = "stylesheet" href = "nav.css">
+    <link rel = "stylesheet" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soccer for Dummies</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class = "nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#learn.html">Learn</a>
-                    <ul>
-                        <li><a href="#Link1">Link 1</a></li>
-                        <li><a href="#Link2">Link 2</a></li>
-                        <li><a href="#Link3">Link 3</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="logo"><p id="website">Soccer For Dummies</p></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="sub"><a href="learn.html">Learn</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="learn.html">Link 1</a></li>
+                        <li class="subitem"><a href="learn.html">Link 2</a></li>
+                        <li class="subitem"><a href="learn">Link 3</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact.html">Contact</a></li>
-                <li><a href="resources.html">Resources</a></li>
+                <li class="item"><a href="#contact.html">Contact</a></li>
+                <li class="item"><a href="resources.html">Resources</a></li>
             </ul>
         </nav>
+        <h1 id="h1"><p>Learn</p></h1>
     </header>
-    
+    <main id="learn">
+        <section id="section1">
+            <p><h2 id="basic">Basic Rules</h2></p>
+            <p id="rules">
+                Before the game, a coin flip decides who gets the opening kickoff. Much like the NFL, the
+                team can choose whether they want to start with the ball in the first half or in the second half, 
+                and the other team will get the option that the first team does not choose. Unlike the NFL, the 
+                team that is taking the kickoff is the team that starts with the ball. In order for a ball to be 
+                out of bounds, the entire ball must be completely over the line. If the ball goes over the 
+                touchline, the team that touched the ball last loses it, and the other team resumes playing with 
+                a throw-in. If the ball goes over the end line it is either a goal kick or a corner kick. It is a 
+                goal kick if the attacking team touches the ball last and a corner kick if the defending team 
+                touches the ball last before it goes out of bounds. A goal kick is taken by the defensive team 
+                (usually the goalkeeper) in the 6-yard box. A corner kick is taken by the attacking team from 
+                whichever corner the ball was closer to when it went out of bounds. A corner kick usually 
+                consists of an attacking player crossing the ball into the box in an attempt for their teammates 
+                to score.
+            </p>
+        </section>
+
+        <section id="section2">
+            <p><h2 id="positions">Positioning</h2></p>
+            <p id="positioning">
+                Each team consists of 11 players. There are 4 main categories of players: The goalkeeper, 
+                defenders, midfielders, and forwards. There is always one goalkeeper, but the rest (defenders, 
+                midfielders, and forwards) can vary in number based on the strategy chosen. Teams choose their 
+                strategy by changing their formation. Formations are listed as a set of numbers 
+                (Ex: 4-3-3, 5-3-2, 4-3-2-1). The goalkeeper is not included in this set of numbers. The first 
+                number represents the number of defenders a team chooses to have, the second number is 
+                midfielders, and the third number is forwards. The most common formation, and the formation 
+                that people use to talk about general positioning, is a 4-3-3. We will use this formation to 
+                explain the usual positions in soccer. 
+            </p>
+        </section>
+
+        <section id="section3">
+            <p><h2 id="leagues">Leagues and Tournaments</h2></p>
+            <p id="tourney">
+                The way leagues and tournaments work in soccer is pretty unique to the sport. We will look at 
+                league play and how that differs from most other sports as well. Almost every country in the 
+                world has its own soccer league, but there are 5 main leagues. These leagues are Serie A (Italy), 
+                La Liga (Spain), Ligue 1 (France), Bundesliga (Germany), and the most popular league is the 
+                Premier League (England). Leagues in soccer are based on points. A win is worth 3 points, a 
+                tie is worth 1 point, and a loss is worth 0 points. The team with the most points at the end 
+                of the season wins the league, there are no playoffs. There is no such thing as overtime in 
+                regular league play. One important thing about soccer leagues is the idea of relegation and 
+                promotion. Each country has lower leagues much like the NBA has the G League, or the MLB has 
+                the minor leagues. We will use the Bundesliga for example. If a team finishes in the bottom 3 of 
+                the Bundesliga, they will get demoted to a lower and less important league for the next season 
+                (In this case, Bundesliga 2 is the name of that league). In return, the top 3 teams from 
+                Bundesliga 2 will get promoted to Bundesliga, which can be a massive accomplishment for 
+                smaller clubs. The top teams in the top league of any given country will qualify for some 
+                more meaningful tournament, which we will talk about shortly. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p id="foot"> 
+            <small>
+                All rights reserved to :<br>
+                Author - Drew Luebbert<br>
+                Email - dplccq@umsystem.edu
+            </small>
+        </p>
+    </footer>
 </body>
 </html>
