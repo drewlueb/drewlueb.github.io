@@ -69,7 +69,7 @@
 
 @media (max-width: 750px) {
     .toggle{
-        display: block;
+        display: none;
         font-size: 30px;
         align-self: center;
     }
@@ -87,7 +87,6 @@
     .item,
     .itemws{
         order: 2;
-        display: none;
     }
     .active .item{
         display: block;
