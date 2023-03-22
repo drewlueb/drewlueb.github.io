@@ -1,4 +1,9 @@
+@font-face {
+    font-family: Georgia;
+    src: url("Georgian.ttf");
+}
 #h1 {
+    font-family: Georgia;
     text-align: center;
     font-size: 3rem;
     margin: 25px;
@@ -244,4 +249,46 @@
         padding: 20px;
     }
     
+}
+@media print {
+    .nav,
+    #pic{
+        display: none;
+    }
+    #h1{
+        border: 5px double black;
+    }
+    .grid{
+        grid-template-columns: 1fr 38fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr 1fr 1fr 1fr;
+    }
+    #h3{
+        grid-row-start: 1;
+    }
+    #aboutinfo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        border-top: 5px double black;
+    }
+    #resumebox{
+        grid-row-start: 4;
+        grid-column-start: 2;
+        justify-self: start;
+        color: black;
+    }
+    a::after{
+        content: " (" attr(href) ") ";
+        color: black;
+    }
+    #quote{
+        grid-column-start: 2;
+        grid-row-start: 6;
+    }
+    #foot{
+        color: black;
+    }
+    @page{
+        margin: 1in;
+    }
 }
