@@ -128,10 +128,6 @@
     line-height: 1.5rem;
     grid-row-start: 3;
 }
-
-#foot{
-    margin-left: 10px;
-}
 #learn{
     display: grid;
     grid-template-columns: 1fr 18fr 1fr;
@@ -293,6 +289,17 @@
     #video{
         display: none;
     }
+    #foot{
+        color: black;
+        text-align: center;
+        padding: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-top: 5px double green;
+        background-color: white;
+        border-bottom: 5px double green;
+        opacity: 75%;
+    }
     
 }
 @media print {
@@ -310,6 +317,19 @@
     #h3{
         grid-row-start: 1;
     }
+    #grass{
+        display: none;
+    }
+    #foot{
+        color: black;
+        text-align: center;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-top: none;
+        border-bottom: none;
+        opacity: 100%;
+    }
     #aboutinfo{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -317,6 +337,7 @@
         border-top: 5px double black;
     }
     #education{
+        display: block;
         grid-row-start: 3;
         grid-column-start: 2;
     }
