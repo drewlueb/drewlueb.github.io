@@ -56,11 +56,6 @@
     margin-top: 15px;
     display: none;
 }
-
-
-
-
-
 .menu li.itemws:hover ul.submenu{
     display: block; 
 }
@@ -69,20 +64,31 @@
 
 @media (max-width: 750px) {
     .toggle{
-        display: none;
+        display: block;
         font-size: 30px;
         align-self: center;
+    }
+    .logo{
+        font-size: 20px;
     }
     .item{
         width: 100%;
         text-align: center;
+        display: none;
     }
     .itemws{
         width: 100%;
         text-align: center;
+        display: none;
     }
     .toggle:hover{
         background-color: #eee770;
+    }
+    nav:hover .item{
+        display: block;
+    }
+    nav:hover .itemws{
+        display: block;
     }
     .item,
     .itemws{
