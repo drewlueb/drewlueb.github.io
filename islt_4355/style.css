@@ -1,7 +1,3 @@
-@font-face {
-    font-family: Georgia;
-    src: url("Georgian.ttf");
-}
 #h1 {
     font-family: Georgia;
     text-align: center;
@@ -24,29 +20,23 @@
     grid-column-start: 2;
     grid-row-start: 1;
 }
-#two{
-    grid-column-start: 2;
-    grid-row-start: 3;
+
+table {
+    border-collapse: collapse;
+    border: 5px double green;
+    margin: 25px;
+    margin-bottom: 100px;
 }
-#three{
-    grid-column-start: 2;
-    grid-row-start: 5;
+table th{
+    background-color: rgb(92, 233, 92);
+    padding: 5px 50px 5px 50px;
 }
-#four{
-    grid-column-start: 2;
-    grid-row-start: 7;
+table tr:nth-child(odd) td{
+    background-color: #EEE770;
 }
-#five{
-    grid-column-start: 2;
-    grid-row-start: 9;
-}
-#six{
-    grid-column-start: 2;
-    grid-row-start: 11;
-}
-#seven{
-    grid-column-start: 2;
-    grid-row-start: 13;
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .grid{
