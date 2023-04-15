@@ -41,21 +41,25 @@ Tested: January 31st,2023
     </header>
 
     <main>
-        <form>
+        <form action="malito:dplccq@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
             <div>
-                <label>First Name:</label>
-                <input required>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required autofocus placeholder="First Name">
             </div>
             <div>
-                <label>Last Name:</label>
-                <input required>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required placeholder="Last Name">
             </div>
             <div>
-                <label>Email:</label>
-                <input required>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Email">
             </div>
             <div>
-                <button type="submit">Submit</button>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required placeholder="Enter N/A if you have no message."></textarea>
+            </div>
+            <div>
+                <button type="reset">Reset</button> <button type="submit">Submit</button>
             </div>
         </form>
     </main>
