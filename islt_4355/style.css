@@ -82,7 +82,7 @@ main {
 }
 #pic{
     grid-column-start: 5;
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 2;
     background-image: url(Headshot.jpg);
     background-size: cover;
@@ -264,18 +264,6 @@ form div {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #foot{
     color: black;
     text-align: center;
@@ -448,9 +436,8 @@ form div {
         border-bottom: 5px double green;
         opacity: 75%;
     }
-    form{
+    form {
         margin: 50px;
-        font-size: 18px;
     }
     
 }
